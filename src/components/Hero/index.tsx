@@ -6,7 +6,8 @@ export default function Hero() {
 		<section className={styles.section}>
 			<div className={styles.containerContent}>
 				<div className={styles.content}>
-					<h1>Para qual estado você deseja ir?</h1>
+					<h1 className="fw-bd">Para qual estado você deseja ir?</h1>
+
 					<input
 						type="text"
 						name="search"
@@ -14,7 +15,7 @@ export default function Hero() {
 						id="search"
 					/>
 
-					<Button title="Buscar" />
+					<Button title="Buscar" styles="fw-bd" />
 				</div>
 			</div>
 		</section>

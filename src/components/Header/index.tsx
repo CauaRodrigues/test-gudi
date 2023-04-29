@@ -32,7 +32,7 @@ export default function Header() {
 					</li>
 
 					<li>
-						<Button title="Agendar" />
+						<Button title="Agendar" styles="fw-bd" />
 					</li>
 				</ul>
 			</nav>
