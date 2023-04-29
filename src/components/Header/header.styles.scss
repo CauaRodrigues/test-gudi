@@ -1,14 +1,15 @@
-@import "../../styles/colors.scss";
+@import "@styles/colors.scss";
 
 .header {
 	width: 100%;
+	min-height: 10vh;
 	padding: 24px 12px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 
 	@media (max-width: 552px) {
-		padding: 8px;
+		padding: 8px 12px;
 		justify-content: space-between;
 	}
 }
@@ -51,6 +52,10 @@
 
 		li {
 			font-size: min(1rem, 6vw);
+
+			&.btn {
+				font-size: min(0.9rem, 6vw);
+			}
 
 			a {
 				color: inherit;
