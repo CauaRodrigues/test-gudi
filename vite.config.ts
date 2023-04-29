@@ -8,6 +8,10 @@ export default defineConfig({
 	resolve: {
 		alias: [
 			{ find: "@styles", replacement: path.resolve(__dirname, "src/styles") },
+			{
+				find: "@components",
+				replacement: path.resolve(__dirname, "src/components"),
+			},
 		],
 	},
 });

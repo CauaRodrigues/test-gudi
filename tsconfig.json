@@ -20,7 +20,8 @@
 		"noFallthroughCasesInSwitch": true,
 		"types": ["node"],
 		"paths": {
-			"@styles/*": ["./src/styles/*"]
+			"@styles/*": ["./src/styles/*"],
+			"@components/*": ["./src/components/*"]
 		}
 	},
 	"include": ["src"],
