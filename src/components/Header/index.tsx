@@ -1,19 +1,22 @@
-import styles from "./header.module.scss";
+import { useState } from "react";
+import "./header.styles.scss";
 
 export default function Header() {
+	const [openMenu, setOpenMenu] = useState(false);
+
 	return (
-		<header className={styles.header}>
+		<header className="header">
 			<picture>
 				<source srcSet="assets/icons/gudi.svg" media="(max-width: 552px)" />
 
 				<img
-					className={styles.logo}
+					className="logo"
 					src="assets/icons/gudi-lema.svg"
 					alt="Gudi Logo"
 				/>
 			</picture>
 
-			<nav className={styles.menu}>
+			<nav className="menu">
 				<ul>
 					<li>
 						<a href="#sobre">Sobre</a>
@@ -33,7 +36,10 @@ export default function Header() {
 				</ul>
 			</nav>
 
-			<button className={styles.btnMenuMobile}>
+			<button
+				className={`btnMenuMobile ${openMenu}`}
+				onClick={() => setOpenMenu((prevState) => !prevState)}
+			>
 				<div className="line" />
 				<div className="line" />
 				<div className="line" />
