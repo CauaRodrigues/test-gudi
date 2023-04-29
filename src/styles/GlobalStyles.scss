@@ -31,28 +31,3 @@ img {
 	display: block;
 	max-width: 100%;
 }
-
-.btn {
-	padding: 8px;
-	width: 132px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	background-color: $PrimaryColor;
-	border-radius: 32px;
-	cursor: pointer;
-	transition: all 0.4s;
-
-	color: $WhiteColor;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: min(0.9rem, 6vw);
-	font-weight: 700;
-
-	&:hover {
-		opacity: 0.8;
-	}
-}

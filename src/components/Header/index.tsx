@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "@components/ui/Button";
 import "./header.styles.scss";
 
 export default function Header() {
@@ -30,8 +31,8 @@ export default function Header() {
 						<a href="#contato">Contato</a>
 					</li>
 
-					<li className="btn">
-						<a href="#agendar">Agendar</a>
+					<li>
+						<Button title="Agendar" />
 					</li>
 				</ul>
 			</nav>

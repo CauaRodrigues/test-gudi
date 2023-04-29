@@ -1,4 +1,5 @@
 import styles from "./hero.module.scss";
+import { Button } from "@components/ui/Button";
 
 export default function Hero() {
 	return (
@@ -12,7 +13,8 @@ export default function Hero() {
 						placeholder="Pesquisar"
 						id="search"
 					/>
-					<button className="btn">Buscar</button>
+
+					<Button title="Buscar" />
 				</div>
 			</div>
 		</section>
