@@ -6,7 +6,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 
-	@media (max-width: 800px) {
+	@media (max-width: 840px) {
 		grid-template-columns: repeat(2, 1fr);
 		min-height: 70vh;
 	}
@@ -43,9 +43,6 @@
 
 		@media (max-width: 544px) {
 			width: 80%;
-		}
-
-		@media (max-width: 340px) {
 		}
 	}
 }
