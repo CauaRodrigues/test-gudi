@@ -3,9 +3,9 @@ import { Button } from "@components/ui/Button";
 
 export default function Hero() {
 	return (
-		<section className={styles.section}>
+		<section className={styles.hero}>
 			<div className={styles.containerContent}>
-				<div className={styles.content}>
+				<div className={styles.contentHero}>
 					<h1 className="fw-bd">Para qual estado você deseja ir?</h1>
 
 					<input

@@ -1,0 +1,67 @@
+@import "@styles/colors";
+
+.container--states {
+	width: 100%;
+	min-height: 40vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	@media (max-width: 800px) {
+		grid-template-columns: repeat(2, 1fr);
+		min-height: 70vh;
+	}
+}
+
+.state {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.label {
+		height: 3rem;
+		width: 60%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: rgba($color: #000000, $alpha: 0.35);
+		backdrop-filter: blur(10px);
+
+		border-radius: 20px;
+		border: 2px solid $WhiteColor;
+
+		color: $WhiteColor;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: min(0.9rem, 3vw);
+
+		@media (max-width: 544px) {
+			width: 80%;
+		}
+
+		@media (max-width: 340px) {
+		}
+	}
+}
+
+.rio-de-janeiro {
+	background-image: url(assets/images/rio-de-janeiro@2x.png);
+}
+
+.rio-das-ostras {
+	background-image: url(assets/images/rio-das-ostras@2x.png);
+}
+
+.caldas-novas {
+	background-image: url(assets/images/caldas-novas@2x.png);
+}
+
+.amazonia {
+	background-image: url(assets/images/amazonia@2x.png);
+}
