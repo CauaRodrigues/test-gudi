@@ -1,3 +1,4 @@
+import { PropsWithChildren } from "react";
 import { Button } from "@components/ui/Button";
 import "./infoSection.styles.scss";
 
@@ -11,10 +12,7 @@ type PropsTypes = {
 			large: string;
 			small: string;
 		};
-		text: {
-			title: string;
-			description: string;
-		};
+		title: string;
 	};
 };
 
@@ -23,22 +21,23 @@ export default function InfoSection({
 	color,
 	btnColor,
 	content,
-}: PropsTypes) {
+	children,
+}: PropsWithChildren<PropsTypes>) {
 	return (
 		<section className={`info-section ${contentLeft ? "left" : null}`}>
 			<img
 				className="content--image"
 				src={content.images.large}
-				alt={content.text.title}
+				alt={content.title}
 			/>
 
 			<div className={`container--content ${color}`}>
 				<div className="content--text">
 					<span className="title--section">Viagem Nacionais</span>
 
-					<h2 className="fw-bk">{content.text.title}</h2>
+					<h2 className="fw-bk">{content.title}</h2>
 
-					<p className="fw-lg">{content.text.description}</p>
+					<p className="fw-lg">{children}</p>
 
 					<Button
 						title="agendar"
@@ -50,7 +49,7 @@ export default function InfoSection({
 					<img
 						className="content--image-small"
 						src={content.images.small}
-						alt={content.text.title}
+						alt={content.title}
 					/>
 				</div>
 			</div>
