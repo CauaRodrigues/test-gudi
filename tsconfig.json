@@ -21,8 +21,15 @@
 		"types": ["node"],
 		"paths": {
 			"@styles/*": ["./src/styles/*"],
-			"@components/*": ["./src/components/*"]
-		}
+			"@sections/*": ["./src/components/sections/*"],
+			"@shared/*": ["./src/components/shared/*"],
+			"@customTypes/*": ["./src/@types/*"]
+		},
+
+		/* Custom Configs */
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"strictFunctionTypes": true
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]

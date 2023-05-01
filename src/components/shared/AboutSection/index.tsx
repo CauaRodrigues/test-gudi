@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { Button } from "@components/ui/Button";
+import { Button } from "@shared/Button";
 import "./infoSection.styles.scss";
 
 type PropsTypes = {
@@ -16,7 +16,7 @@ type PropsTypes = {
 	};
 };
 
-export default function InfoSection({
+export default function AboutSection({
 	contentLeft,
 	color,
 	btnColor,

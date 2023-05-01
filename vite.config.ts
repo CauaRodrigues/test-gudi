@@ -9,8 +9,16 @@ export default defineConfig({
 		alias: [
 			{ find: "@styles", replacement: path.resolve(__dirname, "src/styles") },
 			{
-				find: "@components",
-				replacement: path.resolve(__dirname, "src/components"),
+				find: "@shared",
+				replacement: path.resolve(__dirname, "src/components/shared"),
+			},
+			{
+				find: "@sections",
+				replacement: path.resolve(__dirname, "src/components/sections"),
+			},
+			{
+				find: "@customTypes",
+				replacement: path.resolve(__dirname, "src/@types"),
 			},
 		],
 	},

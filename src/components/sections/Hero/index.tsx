@@ -1,5 +1,5 @@
 import styles from "./hero.module.scss";
-import { Button } from "@components/ui/Button";
+import { Button } from "@shared/Button";
 
 export default function Hero() {
 	return (
