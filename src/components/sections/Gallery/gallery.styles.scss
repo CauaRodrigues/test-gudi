@@ -1,4 +1,4 @@
-@import "@styles/colors";
+@use "@styles/colors";
 
 .container--gallery {
 	padding: 24px 12px;
@@ -16,7 +16,7 @@
 	}
 
 	.title--gallery {
-		color: $GrayColor;
+		color: colors.$GrayColor;
 		text-align: center;
 
 		span.hashtag {

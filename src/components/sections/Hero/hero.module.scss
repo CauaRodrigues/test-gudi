@@ -1,4 +1,4 @@
-@import "@styles/colors.scss";
+@use "@styles/colors.scss";
 
 .hero {
 	width: 100%;
@@ -58,7 +58,7 @@
 		width: 45%;
 		padding: 12px 16px;
 
-		background-color: $WhiteColor;
+		background-color: colors.$WhiteColor;
 		border-radius: 23px;
 
 		@media (max-width: 1000px) {
@@ -71,7 +71,7 @@
 
 		&::placeholder {
 			font-weight: 300;
-			color: $BlackColor;
+			color: colors.$BlackColor;
 		}
 	}
 }

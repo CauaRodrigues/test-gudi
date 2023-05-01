@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@shared/Button";
 import "./header.styles.scss";
+import MenuMobile from "@shared/MenuMobile";
 
 export default function Header() {
 	const [openMenu, setOpenMenu] = useState(false);
@@ -43,13 +44,15 @@ export default function Header() {
 			</nav>
 
 			<button
-				className={`btnMenuMobile ${openMenu}`}
+				className={`btnMenuMobile ${openMenu ? "openMenu" : null}`}
 				onClick={() => setOpenMenu((prevState) => !prevState)}
 			>
 				<div className="line" />
 				<div className="line" />
 				<div className="line" />
 			</button>
+
+			{openMenu && <MenuMobile />}
 		</header>
 	);
 }
