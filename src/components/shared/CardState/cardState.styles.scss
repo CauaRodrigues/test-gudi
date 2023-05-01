@@ -2,9 +2,11 @@
 
 .state {
 	width: 100%;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -19,7 +21,6 @@
 
 	background-color: rgba($color: colors.$BlackColor, $alpha: 0.35);
 	backdrop-filter: blur(10px);
-
 	border-radius: 32px;
 	border: 2px solid colors.$WhiteColor;
 

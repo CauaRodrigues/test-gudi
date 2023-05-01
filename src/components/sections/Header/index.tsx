@@ -12,9 +12,9 @@ export default function Header() {
 				<source srcSet="assets/icons/gudi.svg" media="(max-width: 552px)" />
 
 				<img
-					className="logo"
 					src="assets/icons/gudi-lema.svg"
 					alt="Gudi Logo"
+					className="logo"
 				/>
 			</picture>
 

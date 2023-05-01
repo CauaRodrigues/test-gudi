@@ -1,5 +1,5 @@
-import styles from "./menuMobile.module.scss";
 import { Button } from "@shared/Button";
+import styles from "./menuMobile.module.scss";
 
 export default function MenuMobile() {
 	return (
