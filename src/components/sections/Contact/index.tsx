@@ -23,7 +23,7 @@ export default function Contact() {
 					placeholder="Escreva a sua mensagem"
 				></textarea>
 
-				<Button title="Enviar" transparentEffect />
+				<Button title="Enviar" color="white" transparentEffect styles="fw-rg" />
 			</form>
 		</section>
 	);

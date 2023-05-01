@@ -15,7 +15,12 @@ export default function Hero() {
 						id="search"
 					/>
 
-					<Button title="Buscar" styles="fw-bd" />
+					<Button
+						title="Buscar"
+						styles="fw-bd"
+						transparentEffect={false}
+						color="white"
+					/>
 				</div>
 			</div>
 		</section>
