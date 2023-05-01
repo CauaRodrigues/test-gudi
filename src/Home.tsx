@@ -5,6 +5,7 @@ import States from "@sections/States";
 import Gallery from "@sections/Gallery";
 import Benefits from "@sections/Benefits";
 import Contact from "@sections/Contact";
+import Footer from "@sections/Footer";
 
 function Home() {
 	return (
@@ -16,6 +17,7 @@ function Home() {
 			<Gallery />
 			<Benefits />
 			<Contact />
+			<Footer />
 		</>
 	);
 }
