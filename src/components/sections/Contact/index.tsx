@@ -4,7 +4,7 @@ import styles from "./contact.module.scss";
 export default function Contact() {
 	return (
 		<section className={styles.containerContact}>
-			<h2>Fale conosco</h2>
+			<h2 className="fw-bd">Fale conosco</h2>
 
 			<form className={styles.formContact}>
 				<input

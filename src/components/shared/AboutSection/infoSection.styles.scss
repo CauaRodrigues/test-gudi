@@ -1,6 +1,6 @@
-@import "@styles/colors";
+@use "@styles/colors";
 
-section.info-section {
+.info-section {
 	width: 100%;
 	display: flex;
 
@@ -83,19 +83,23 @@ section.info-section {
 
 .container--content.blue {
 	background: transparent
-		linear-gradient(180deg, $PrimaryColor 0%, $PrimaryDarkColor 100%);
-	color: $WhiteColor;
+		linear-gradient(
+			180deg,
+			colors.$PrimaryColor 0%,
+			colors.$PrimaryDarkColor 100%
+		);
+	color: colors.$WhiteColor;
 
 	& .content--text .title--section::before {
-		background-color: $WhiteColor;
+		background-color: colors.$WhiteColor;
 	}
 }
 
 .container--content.light {
-	background-color: $WhiteColor;
-	color: $PrimaryColor;
+	background-color: colors.$WhiteColor;
+	color: colors.$PrimaryColor;
 
 	& .content--text .title--section::before {
-		background-color: $PrimaryColor;
+		background-color: colors.$PrimaryColor;
 	}
 }
