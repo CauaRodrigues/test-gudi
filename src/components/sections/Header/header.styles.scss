@@ -58,6 +58,12 @@
 				color: inherit;
 				font-weight: inherit;
 				font-size: inherit;
+				transition: ease-in 0.3s;
+
+				&:hover {
+					color: colors.$GrayColor;
+					text-decoration: underline;
+				}
 			}
 		}
 	}

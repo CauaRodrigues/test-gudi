@@ -51,5 +51,11 @@
 
 	.photo {
 		width: 100%;
+		transition: all 0.5s;
+
+		&:hover {
+			z-index: 1;
+			transform: scale(1.1);
+		}
 	}
 }

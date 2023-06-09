@@ -4,6 +4,7 @@ import { data } from "./data";
 export default function About() {
 	return (
 		<>
+			<span id="sobre"></span>
 			<AboutSection color="blue" btnColor="white" content={data["couple"]}>
 				Planeje sua viagem com a sua paquera, compartilhar momentos preciosos
 				juntos não tem preço.

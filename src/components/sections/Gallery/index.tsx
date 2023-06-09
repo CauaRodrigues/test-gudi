@@ -3,6 +3,8 @@ import "./gallery.styles.scss";
 export default function Gallery() {
 	return (
 		<section className="container--gallery">
+			<span id="beneficios"></span>
+
 			<div className="title--gallery">
 				<span className="hashtag fw-md">use a hashtag #brasilisverigudi</span>
 				<h2 className="fw-bd">Nosso mural de Experiências</h2>
